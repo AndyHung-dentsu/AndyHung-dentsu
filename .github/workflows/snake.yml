@@ -16,9 +16,8 @@ jobs:
           # 替換為你的 GitHub 使用者名稱
           github_user_name: ${{ github.repository_owner }}
           outputs: |
-            dist/github-snake.svg
-            dist/github-snake-dark.svg?palette=github-dark
-            dist/ocean.gif?color_snake=orange&color_dots=#bfd6f6,#8dbdff,#64a1f4,#4b91f1,#3b7dd8
+            # 經典淺綠色系
+            dist/github-snake-light.svg?color_snake=#1a7f37&color_dots=#ebedf0,#9be9a8,#40c463,#30a14e,#216e39
 
       - name: Push to output branch
         uses: crazy-max/ghaction-github-pages@v3.1.0
